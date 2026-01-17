@@ -22,7 +22,7 @@ www/
 *.aab
 android/app/build/
 android/app/release/
-android/gradle/
+android/.gradle/
 android/local.properties
 android/gradle.properties
 
