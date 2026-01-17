@@ -22,8 +22,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Enable Jetifier
-        run: echo "android.enableJetifier=true" >> android/gradle.properties
+      - name: Enable AndroidX and Jetifier
+        run: |
+          echo "android.useAndroidX=true" >> android/gradle.properties
+          echo "android.enableJetifier=true" >> android/gradle.properties
 
       - name: Setup Java
         uses: actions/setup-java@v4
