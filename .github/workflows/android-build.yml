@@ -47,7 +47,7 @@ jobs:
             echo "Error: KEYSTORE_BASE64 secret is empty"
             exit 1
           fi
-          echo "$KEYSTORE_B64" | tr -d '\n\r ' | base64 -di > android/app/nithara-release.keystore
+          echo "$KEYSTORE_B64" | tr -d '\n\r ' | base64 -di > android/app/sreekala-release.keystore
 
       - name: Build Signed APK
         env:
