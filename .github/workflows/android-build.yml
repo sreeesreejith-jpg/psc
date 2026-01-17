@@ -36,7 +36,7 @@ jobs:
 
       - name: Decode Keystore
         run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/nithara-release.keystore
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | tr -d '\n ' | base64 -d > android/app/nithara-release.keystore
 
       - name: Build Signed APK
         env:
