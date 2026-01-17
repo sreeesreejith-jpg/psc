@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "io.github.sreeesreejith_jpg.twa",
+            "sha256_cert_fingerprints": [
+                "C6:62:43:A4:AD:39:DF:5C:AB:83:6C:90:29:5E:80:60:AF:BE:F8:8F:68:0B:87:4C:0A:56:AC:86:A9:27:CA:02"
+            ]
+        }
+    }
+]

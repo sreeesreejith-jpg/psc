@@ -1,0 +1,42 @@
+# OS files
+.DS_Store
+Thumbs.db
+.directory
+
+# Dependencies
+node_modules/
+lib/
+capacitor-cordova-android/
+dist/
+www/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+*.log
+*.apk
+*.aab
+android/app/build/
+android/app/release/
+android/gradle/
+android/local.properties
+android/gradle.properties
+
+# Sensitive files
+*.keystore
+*.jks
+keystore_*.txt
+*.b64
+
+# Backup/Test folders (just in case they reappear)
+sreejith/
+public_site_test/
+test-pdf.html
+DATE_ANALYSIS.md
+CHANGES_SUMMARY.md
+APK_SIGNING_SETUP.md
+APK_SIGNING_SETUP.txt
