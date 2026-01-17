@@ -1,9 +1,5 @@
 {
   "appId": "com.sreejith.sreekala",
   "appName": "Sreekala Apps",
-  "webDir": "www",
-  "server": {
-    "hostname": "sreekala.app",
-    "androidScheme": "https"
-  }
+  "webDir": "www"
 }
