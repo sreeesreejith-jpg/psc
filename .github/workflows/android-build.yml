@@ -40,8 +40,14 @@ jobs:
         run: npx cap sync
 
       - name: Decode Keystore
+        env:
+          KEYSTORE_B64: ${{ secrets.KEYSTORE_BASE64 }}
         run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | tr -d '\n\r ' | base64 -di > android/app/nithara-release.keystore
+          if [ -z "$KEYSTORE_B64" ]; then
+            echo "Error: KEYSTORE_BASE64 secret is empty"
+            exit 1
+          fi
+          echo "$KEYSTORE_B64" | tr -d '\n\r ' | base64 -di > android/app/nithara-release.keystore
 
       - name: Build Signed APK
         env:
