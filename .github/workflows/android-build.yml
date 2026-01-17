@@ -1,4 +1,4 @@
-# Triggering build refresh
+# Build triggered with secrets
 name: Build Android APK
 
 on:
